@@ -1,10 +1,18 @@
 # Rails5 Boilerplate
 
-This is starter application template for Rails 5.
+This is starter application template for Ruby on Rails 5.
 
 ## Versions
 
 - Rails 5.0.0.1
+
+## Features
+
+- Ruby on Rails 5.0
+- [Twitter Bootstrap 3](https://github.com/twbs/bootstrap-sass)
+- FontAwesome
+- [Slim Template Engine](http://slim-lang.com/)
+- MySQL
 
 ## Set up
 
