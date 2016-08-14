@@ -35,15 +35,7 @@ $ cd rails5-boilerplate
 $ bundle install
 ```
 
-After finish the database configuration,
-
-```
-$ bundle exec rails server
-```
-
-and go to [http://localhost:3000/](http://localhost:3000/).
-
-## Configuration
+### Configuration
 
 We use [dotenv gem](https://github.com/bkeepers/dotenv) To keep the credentials safe.
 Please input your credentials into .env file after copying from .env.sample.
@@ -63,9 +55,20 @@ DB_PASSWORD=password
 ### Database
 
 ```
-$ bundle exec rake db:create
-$ bundle exec rake db:migrate
+$ bundle exec db:create
+$ bundle exec db:migrate
 ```
+
+### Run
+
+After finish the database configuration,
+
+```
+$ bin/rails server
+```
+
+and go to [http://localhost:3000/](http://localhost:3000/).
+
 
 ## How to run the test suite
 
