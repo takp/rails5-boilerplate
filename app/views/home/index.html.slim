@@ -27,5 +27,9 @@
         p Slim Template Engine
       li
         p MySQL
-    = link_to "Sign up", root_path, class: "btn btn-lg btn-default"
-    = link_to "Log in", root_path, class: "btn btn-lg btn-default home-login-button"
+    - if user_signed_in?
+      p.strong Welcom #{current_user.email}!
+      = link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-lg btn-default"
+    - else
+      = link_to "Sign up", new_user_registration_path, class: "btn btn-lg btn-default"
+      = link_to "Log in", new_user_session_path, class: "btn btn-lg btn-default home-login-button"
