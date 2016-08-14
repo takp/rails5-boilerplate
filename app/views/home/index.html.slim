@@ -22,7 +22,8 @@
   .home-inner
     h1 Rails5 Boilerplate
     p This is starter application template for Ruby on Rails 5.
-    = link_to "Github", "https://github.com/takp/rails5-boilerplate", target: :_blank
+    = link_to github_link, target: :_blank
+
     h3 Features
     ul
       li
@@ -35,6 +36,12 @@
         p Slim Template Engine
       li
         p MySQL
+      li
+        p Rspec
+      li
+        p Devise
+      li
+        p ActiveDecorator
     - if user_signed_in?
       p.strong Welcom #{current_user.email}!
       = link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-lg btn-default"

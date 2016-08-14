@@ -8,13 +8,40 @@ This is starter application template for Ruby on Rails 5.
 
 ## Features
 
-- Ruby on Rails 5.0
+- [Ruby on Rails 5.0](http://rubyonrails.org/)
 - [Twitter Bootstrap 3](https://github.com/twbs/bootstrap-sass)
-- FontAwesome
+- [FontAwesome](https://github.com/FortAwesome/font-awesome-sass)
 - [Slim Template Engine](http://slim-lang.com/)
 - MySQL
+- [Rspec](https://github.com/rspec/rspec-rails)
+- [Devise](https://github.com/plataformatec/devise)
+- [ActiveDecorator](https://github.com/amatsuda/active_decorator)
 
-## Set up
+## Architecture
+
+MVC + Service + Decorator
+
+- Models: app/models
+- Views: app/views
+- Controllers: app/controllers
+- Services: app/services
+- Decorators: app/decorators
+
+## Quick Start
+
+```
+$ git clone git@github.com:takp/rails5-boilerplate.git
+$ cd rails5-boilerplate
+$ bundle install
+```
+
+After finish the database configuration,
+
+```
+$ bundle exec rails server
+```
+
+and go to [http://localhost:3000/](http://localhost:3000/).
 
 ## Configuration
 
@@ -33,14 +60,17 @@ DB_USERNAME=username
 DB_PASSWORD=password
 ```
 
-### Database creation
+### Database
 
 ```
 $ bundle exec rake db:create
+$ bundle exec rake db:migrate
 ```
 
-### Database initialization
-
 ## How to run the test suite
+
+```
+$ bundle exec rspec
+```
 
 ## Deployment instructions
