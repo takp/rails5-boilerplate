@@ -35,7 +35,7 @@ $ cd rails5-boilerplate
 $ bundle install
 ```
 
-### Configuration
+### Configurations
 
 We use [dotenv gem](https://github.com/bkeepers/dotenv) To keep the credentials safe.
 Please input your credentials into .env file after copying from .env.sample.
@@ -55,8 +55,8 @@ DB_PASSWORD=password
 ### Database
 
 ```
-$ bundle exec db:create
-$ bundle exec db:migrate
+$ bin/rake db:create
+$ bin/rake db:migrate
 ```
 
 ### Run
