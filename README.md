@@ -2,6 +2,8 @@
 
 This is starter application template for Ruby on Rails 5.
 
+![Rails5 Boilerplate Top Page](https://raw.githubusercontent.com/takp/rails5-boilerplate/master/app/assets/images/rails5-top-page.png "Rails5 Boilerplate")
+
 ## Versions
 
 - Rails 5.0.0.1
