@@ -6,7 +6,7 @@ This is starter application template for Ruby on Rails 5.
 
 ## Versions
 
-- Rails 5.0.0.1
+- Rails 5.1.2
 
 ## Features
 
@@ -39,19 +39,22 @@ $ bundle install
 
 ### Configurations
 
-We use [dotenv gem](https://github.com/bkeepers/dotenv) To keep the credentials safe.
-Please input your credentials into .env file after copying from .env.sample.
+
 
 ```
-cp .env.sample .env
+cp config/database.yml.sample config/database.yml
 ```
 
-Input your database credentials into .env file.
+Input your database credentials into `config/database.yml` file.
 
 ```
-DB_HOST=localhost
-DB_USERNAME=username
-DB_PASSWORD=password
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: YOUR_USERNAME
+  password: YOUR_PASSWORD
+  socket: /tmp/mysql.sock
 ```
 
 ### Database

@@ -58,3 +58,4 @@ bower.json
 # Editor
 /.idea
 *.iml
+config/database.yml
