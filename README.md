@@ -6,11 +6,11 @@ This is starter application template for Ruby on Rails 5.
 
 ## Versions
 
-- Rails 5.1.2
+- Rails 5.1.3
 
 ## Features
 
-- [Ruby on Rails 5.0](http://rubyonrails.org/)
+- [Ruby on Rails](http://rubyonrails.org/)
 - [Twitter Bootstrap 3](https://github.com/twbs/bootstrap-sass)
 - [FontAwesome](https://github.com/FortAwesome/font-awesome-sass)
 - [Slim Template Engine](http://slim-lang.com/)
