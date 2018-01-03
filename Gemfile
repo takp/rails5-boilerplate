@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.2'
+gem 'rails'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
@@ -48,7 +48,7 @@ group :development, :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'simplecov', :require => false
-  gem 'rubocop', '~> 0.42.0', require: false
+  gem 'rubocop', '~> 0.52.1', require: false
   gem 'pry'
   gem 'pry-rails'
   gem 'pry-doc'
