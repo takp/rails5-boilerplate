@@ -6,7 +6,7 @@ This is starter application template for Ruby on Rails 5.
 
 ## Versions
 
-- Rails 5.2.0
+- Rails 5.2.1
 
 ## Features
 
