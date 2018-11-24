@@ -34,25 +34,6 @@ MVC + Service + Decorator
 ```
 $ git clone git@github.com:takp/rails5-boilerplate.git
 $ cd rails5-boilerplate
-$ bundle install
-```
-
-### Configurations
-
-```
-cp config/database.yml.sample config/database.yml
-```
-
-Input your database credentials into `config/database.yml` file.
-
-```
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
-  username: YOUR_USERNAME
-  password: YOUR_PASSWORD
-  socket: /tmp/mysql.sock
 ```
 
 ### Run
@@ -77,7 +58,6 @@ $ docker-compose up
 ```
 
 and go to [http://localhost:3000/](http://localhost:3000/).
-
 
 ## How to run the test suite
 
