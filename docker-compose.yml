@@ -1,0 +1,28 @@
+version: '3'
+services:
+  app:
+    build: ./
+    environment:
+      RAILS_ENV: development
+      DATABASE_HOST: db
+      DATABASE_PASSWORD: password
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/var/app:delegated
+      - app-data:/var/app/bundle:delegated
+    links:
+      - db
+    stdin_open: true
+    tty: true
+  db:
+    image: mysql:5.7.20
+    command: "mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci"
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      TZ: Asia/Tokyo
+    ports:
+      - '3306:3306'
+volumes:
+  app-data:
+    driver: local
