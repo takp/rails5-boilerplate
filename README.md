@@ -39,8 +39,6 @@ $ bundle install
 
 ### Configurations
 
-
-
 ```
 cp config/database.yml.sample config/database.yml
 ```
@@ -57,19 +55,25 @@ default: &default
   socket: /tmp/mysql.sock
 ```
 
-### Database
-
-```
-$ bin/rake db:create
-$ bin/rake db:migrate
-```
-
 ### Run
 
-After finish the database configuration,
+- Build
 
+```bash
+$ docker-compose build
 ```
-$ bin/rails server
+
+- Initialize database
+
+```bash
+$ docker-compose run app rake db:create
+$ docker-compose run app rake db:migrate
+```
+
+- Run
+
+```bash
+$ docker-compose up
 ```
 
 and go to [http://localhost:3000/](http://localhost:3000/).
